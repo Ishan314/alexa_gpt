@@ -54,8 +54,12 @@ $ python3.8 -m pip install ask-sdk-core -t python/
 ```bash
 $ zip -r layer.zip python
 ```
-30. Publish the Lambda layer by running the following command. *Replace "us-east-1" with the AWS Region that your Lambda function is in*
+30. Publish the Lambda layer by running the following command. Replace "us-east-1" with the AWS Region that your Lambda function is in. You can find the AWS region of your lambda function by looking at its function ARN (Amazon Resource Name) on the Lambda console page. 
 ```bash
 $ aws lambda publish-layer-version --layer-name pandas-layer --zip-file fileb://layer.zip --compatible-runtimes python3.8 --region us-east-1
 ```
-31. 
+31. Copy the `VersionARN` from the resulting output. Head back to the Lambda console and scroll down and click "Add a Layer".
+32. Click on "Specify an ARN" and paste the `VersionARN` into the box. Click "Add". Scroll back up and click on "Deploy" to publish the code. If the button is not highlighted, then don't worry.
+## Usage
+
+## Customization
