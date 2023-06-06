@@ -30,3 +30,25 @@ The following `python`-based program uses the Alexa Skill Developer Console, AWS
 19. Go back to the skill build interface (the other tab) and click on "Endpoint" on the right hand pane.
 20. Copy the Skill ID to the keyboard and go back to the Lambda function page. Paste the skill ID into the box.
 21. Click "Add" and the lambda function should now be connected to your Alexa Skill. 
+22. Scroll down the page and click on the "Upload Code" dropdown menu. Choose ".zip file".
+23. Compress the file `lambda_function.py` and upload it to the AWS Lambda Console.
+24. Open the AWS Console Home on a new tab and search up "Cloud9".
+25. Click "Create Environment", name it, and click "Add".
+26. In the terminal at the bottom of the page, install Python 3.8 and pip3 by running the following commands:
+```bash
+$ sudo amazon-linux-extras install python3.8
+$ curl -O https://bootstrap.pypa.io/get-pip.py
+$ python3.8 get-pip.py --user
+```
+27. Create a python folder by running the following command:
+```bash
+$ mkdir python
+```
+28. Install the `openai`, `boto3`, and `ask-sdk-core` libararies by running the following commands:
+```bash
+$ python3.8 -m pip install openai -t python/
+$ python3.8 -m pip install boto3 -t python/
+$ python3.8 -m pip install ask-sdk-core -t python/
+```
+
+
