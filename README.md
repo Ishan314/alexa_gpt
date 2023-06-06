@@ -31,11 +31,11 @@ The following `python`-based program uses the Alexa Skill Developer Console, AWS
 20. Copy the Skill ID to the keyboard and go back to the Lambda function page. Paste the skill ID into the box.
 21. Click "Add" and the lambda function should now be connected to your Alexa Skill. 
 22. Scroll down the page and click on the "Upload Code" dropdown menu. Choose ".zip file".
-23. Download the `lambda_function.py` file from the repository. Open it and insert your OpenAI API Key here:
+23. Download the `lambda_function.py` file from the repository. Compress the file `lambda_function.py` and upload it to the AWS Lambda Console.
+24. Once uploaded, insert your OpenAI API Key in the following line in the code and deploy it to save your changes:
 ```python
 openai.api_key = "OPENAI KEY HERE"
 ```
-24. Compress the file `lambda_function.py` and upload it to the AWS Lambda Console.
 25. Open the AWS Console Home on a new tab and search up "Cloud9".
 26. Click "Create Environment", name it, and click "Add".
 27. In the terminal at the bottom of the page, install Python 3.8 and pip3 by running the following commands:
