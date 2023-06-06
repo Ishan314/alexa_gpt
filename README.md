@@ -21,7 +21,7 @@ The following `python`-based program uses the Alexa Skill Developer Console, AWS
 10. In the "ACTIONS" column for "HelloWorldIntent", click on "edit". Delete all of the sample utterances for the intent.
 11. Add a sample utterance: "I want to you to {Query}". Create a new slot named "Query" and click enter to add the utterance.
 12. Set the slot type to be "AMAZON.SearchQuery".
-13. Save and return to the build interface. 
+13. Save, click "Build Skill", and return to the build interface. 
 14. Open a new tab and go to https://console.aws.amazon.com/. Log in with your AWS account.
 15. In the search bar at the top of the page, type in "Lambda" and press enter.
 16. Click on "Create Function" at the top right of the page. 
@@ -64,6 +64,10 @@ $ aws lambda publish-layer-version --layer-name pandas-layer --zip-file fileb://
 ```
 31. Copy the `VersionARN` from the resulting output. Head back to the Lambda console and scroll down and click "Add a Layer".
 32. Click on "Specify an ARN" and paste the `VersionARN` into the box. Click "Add". Scroll back up and click on "Deploy" to publish the code. If the button is not highlighted, then don't worry.
+33. Scroll up to the top of the Lambda function console page and copy the Function ARN. 
+34. Return to the Alexa Skill Build interface and click on "Endpoint" in the section on the right. 
+35. Paste the Function ARN next to "Default Region" and click "Save".
+36. Build the skill.
 ## Usage
 
 ## Customization
