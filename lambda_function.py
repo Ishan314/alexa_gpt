@@ -16,7 +16,7 @@ import openai
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-openai.api_key = "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"
+openai.api_key = "OPENAI KEY HERE"
 
 class LaunchRequestHandler(AbstractRequestHandler):
     """Handler for Skill Launch."""
