@@ -33,7 +33,7 @@ The following `python`-based program uses the Alexa Skill Developer Console, AWS
 22. Scroll down the page and click on the "Upload Code" dropdown menu. Choose ".zip file".
 23. Download the `lambda_function.py` file from the repository. Open it and insert your OpenAI API Key here:
 ```python
-openai.api_key = ""
+openai.api_key = "OPENAI KEY HERE"
 ```
 24. Compress the file `lambda_function.py` and upload it to the AWS Lambda Console.
 25. Open the AWS Console Home on a new tab and search up "Cloud9".
