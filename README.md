@@ -77,6 +77,11 @@ $ aws lambda publish-layer-version --layer-name pandas-layer --zip-file fileb://
 Once the skill is built and the code is deployed, it can be tested on any Alexa home device connected to the email used to register for the skill developer account. If you don't have an Alexa device, then you can either test it on the mobile Alexa application or in the developer console under the "Test" tab. Make sure to set the skill state to "Development".
 
 Without any customization, the interaction between the device and the user will look like this:
-> **User**: Alexa, [Invocation Name]
+> **User**: Alexa, [Invocation Name].
+> **Alexa**: Hello, this is GPT! What would you like me to do?
+> **User**: I want you to {Query}.
+> **Alexa**: *"gpt-3.5-turbo" response to {Query}*
+The {Query} represents the text that is given to the OpenAI API, so it is important that the response is structured ***exactly*** in that manner. Example responses could be "I want you to write me a poem about bananas" or "I want you to tell me how to bake a cheesecake".
+
 
 ## Customization
