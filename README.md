@@ -95,7 +95,7 @@ Coming soon.
 
 ## Customization
 
-### The Interaction model
+### The Interaction Model
 
 ### API Customization
 
