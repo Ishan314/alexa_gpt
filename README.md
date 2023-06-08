@@ -1,14 +1,17 @@
 # AlexaGPT
+
 Artificial Intelligence (GPT) Implementation into Alexa Home devices.
 
 The following `python`-based program uses the Alexa Skill Developer Console, AWS Lambda, and AWS Cloud9, and the OpenAI API.
 
 ## Requirements 
+
 1. OpenAI API Key: You can sign up for a billing account on the OpenAI website (https://platform.openai.com/) to recieve an API Key.
 2. An AWS account with the necessary permissions to create and manage Lambda functions and Cloud9 environments. You can sign up for an account at https://portal.aws.amazon.com/billing/signup?type=enterprise#/start/email.
 3. The Alexa Developer Console account for creating and configuring the skill. You can sign up for an account at https://developer.amazon.com/en-US/alexa/alexa-skills-kit.
 
 ## Installation and Setup
+
 1. Begin by logging into the Alexa Skill Developer Console using your developer account.
 2. Create a new skill and choose a name and primary locale. 
 3. Choose the "other" experience option, a "custom" model, and create an "Alexa-Hosted (Python)" skill.
@@ -68,6 +71,12 @@ $ aws lambda publish-layer-version --layer-name pandas-layer --zip-file fileb://
 34. Return to the Alexa Skill Build interface and click on "Endpoint" in the section on the right. 
 35. Paste the Function ARN next to "Default Region" and click "Save".
 36. Build the skill.
+
 ## Usage
+
+Once the skill is built and the code is deployed, it can be tested on any Alexa home device connected to the email used to register for the skill developer account. If you don't have an Alexa device, then you can either test it on the mobile Alexa application or in the developer console under the "Test" tab. Make sure to set the skill state to "Development".
+
+Without any customization, the interaction between the device and the user will look like this:
+> **User**: Alexa, [Invocation Name]
 
 ## Customization
